@@ -1,8 +1,13 @@
 import React from 'react'
+import PageContainer from '../Components/Common/PageContainer'
 
 const AllPages = () => {
   return (
-    <div>AllPages</div>
+    <div>
+      <PageContainer>
+        All Pages
+      </PageContainer>
+    </div>
   )
 }
 

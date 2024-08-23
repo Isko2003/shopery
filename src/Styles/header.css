@@ -52,3 +52,42 @@ header {
     width: 1px;
     height: 20px;
 }
+.header-nav li {
+    display: flex;
+    gap: 2px;
+    cursor: pointer;
+}
+.header-nav li:hover {
+    color: white;
+}
+.header-nav nav {
+    width: 50% !important;
+}
+
+.hamburger div {
+    width: 6px;
+    height: 20px;
+    background-color: #b2b2b2;
+}
+.hamburger {
+    display: flex;
+    gap: 4px;
+}
+.header-svg {
+    display: none !important;
+}
+
+@media screen and (min-width: 375px) and (max-width: 500px) {
+    .location,
+    .header-nav,
+    .header-center,
+    .shopping-cart {
+        display: none !important;
+    }
+    .header-hamburger {
+        padding-inline-start: 0 !important;
+    }
+    .header-svg {
+        display: block !important;
+    }
+}

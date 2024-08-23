@@ -1,8 +1,13 @@
 import React from 'react'
+import PageContainer from '../Components/Common/PageContainer'
 
 const AboutUs = () => {
   return (
-    <div>AboutUs</div>
+    <div>
+      <PageContainer>
+        About Us
+      </PageContainer>
+    </div>
   )
 }
 
