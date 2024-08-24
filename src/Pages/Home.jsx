@@ -1,8 +1,9 @@
-import React from 'react'
 import PageContainer from '../Components/Common/PageContainer';
+import Bannar from '../Components/HomeComps/Bannar';
 const Home = () => {
   return (
     <PageContainer>
+      <Bannar/>
       
     </PageContainer>
   )
