@@ -2,12 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-.background {
-    background-color: #333;
+@layer components {
+    .background {
+        @apply bg-[#333];
+    }
+
+    .section {
+        @apply container mx-auto py-10 px-5 sm: p-10 my-10 w-11/12;
+    }
+
+    .br-6 {
+        @apply rounded-md;
+    }
 }
-.br-6 {
-    border-radius: 6px;
-}
+
 .transition {
     transition: .5s all ease;
 }
