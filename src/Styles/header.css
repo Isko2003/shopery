@@ -73,21 +73,13 @@ header {
     display: flex;
     gap: 4px;
 }
-.header-svg {
-    display: none !important;
+.header-svg path {
+    color: black;
 }
-
-@media screen and (min-width: 375px) and (max-width: 500px) {
-    .location,
-    .header-nav,
-    .header-center,
-    .shopping-cart {
-        display: none !important;
-    }
-    .header-hamburger {
-        padding-inline-start: 0 !important;
-    }
-    .header-svg {
-        display: block !important;
-    }
+.close {
+    display: none;
+}
+.header-sidebar {
+    height: 300px !important;
+    width: 350px !important;
 }
