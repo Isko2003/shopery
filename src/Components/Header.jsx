@@ -1,19 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { CiLocationOn } from "react-icons/ci";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import '../Styles/header.css';
 import logo from '../assets/imgs/logo.png';
-import { IoSearchSharp } from "react-icons/io5";
 import { IoIosHeartEmpty } from "react-icons/io";
+import { IoSearchSharp } from "react-icons/io5";
 import { FaShoppingBasket } from "react-icons/fa";
 import { FaPhoneVolume } from "react-icons/fa6";
+import SearchInput from './Common/SearchInput';
+import HeaderCross from './Common/HeaderCross';
 
 const Header = () => {
   const price = 57;
+
+  const [show, setShow] = useState(true);
+
   return (
     <header className='w-full'>
       <div className='background flex justify-between h-16 ps-20 pe-36 items-center'>
-        <div className='flex gap-4 location'>
+        <div className='hidden gap-4 location lg:flex'>
           <CiLocationOn className='icon'/>
           <p>Store Location: Lincoln- 344, Illinois, Chicago, USA</p>
         </div>
@@ -34,9 +39,9 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className='flex justify-around items-center p-3 ps-12 pt-5 header-hamburger'>
+      <div className='flex justify-around items-center p-3 xs:ps-0 md:ps-0 pt-5'>
         {/* HAMBURGER MENU */}
-        <div>
+        <div className='xs:block lg:hidden' onClick={() => setShow(!show)}>
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className='cursor-pointer header-svg'>
             <path d="M3 12H21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
             <path d="M3 6H21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -46,14 +51,8 @@ const Header = () => {
         <div className='header-img cursor-pointer'>
           <img src={logo} alt="shopery-logo" />
         </div>
-        <div className='flex justify-center items-center header-center'>
-          <div className='header-input'>
-            <input type="text" placeholder='Search' className='search-input br-6'/>
-            <span className='search-icon'><IoSearchSharp className='icon'/></span>
-          </div>
-          <div>
-            <button className='search-btn br-6 hover:transition-all duration-500 ease'>Search</button>
-          </div>
+        <div>
+          <SearchInput />
         </div>
         <div className='header-cart flex gap-2 items-center'>
           <div>
@@ -63,13 +62,85 @@ const Header = () => {
           <div>
             <FaShoppingBasket className='icon text-3xl cursor-pointer'/>
           </div>
-          <div className='shopping-cart'>
+          <div className='shopping-cart hidden lg:block'>
             <p>Shopping Cart:</p>
             <span>&#36;{price}.00</span>
           </div>
         </div>
       </div>
-      <div className='header-nav background h-14 ps-20 flex justify-between pe-32'>
+      
+      <div className={`header-sidebar bg-black fixed top-0 w-72 left-6 z-[9999] transition-all duration-300 ease-linear ${show && "close"} relative`}>
+        <button className='header-cross absolute right-0 top-2'>
+          <HeaderCross />
+        </button>
+        <div className='header-mobile-sidebar'>
+          <div className='header-mobile-top'>
+          <div className='flex justify-around'>
+            <div className='header-input w-40'>
+              <input type="text" placeholder='Search' className='search-input br-6 w-60 pt-1'/>
+              <span className='search-icon'><IoSearchSharp className='icon'/></span>
+            </div>
+            <button className='search-btn br-6 hover:transition-all duration-500 ease h-6 pt-1 ps-9 w-11'><IoSearchSharp className='icon'/></button>
+          </div>
+            <ul>
+              <li>
+                <a href="" className='flex gap-1'>
+                  Home
+                  <span><MdKeyboardArrowDown /></span>
+                </a>
+                <ul className='hidden'>
+                  <li><a href="#">Home 01</a></li>
+                  <li><a href="#">Home 02</a></li>
+                  <li><a href="#">Home 03</a></li>
+                  <li><a href="#">Home 04</a></li>
+                  <li><a href="#">Home 05</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="" className='flex gap-1'>
+                  Shop
+                  <span><MdKeyboardArrowDown /></span>
+                </a>
+                <ul className='hidden'>
+                  <li>Shop 01</li>
+                  <li>Shop 02</li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" className='flex gap-1'>
+                  Pages
+                  <span><MdKeyboardArrowDown /></span>
+                </a>
+              </li>
+              <li>
+                <a href="#" className='flex gap-1'>
+                  Blog
+                  <span><MdKeyboardArrowDown /></span>
+                </a>
+                <ul className='hidden'>
+                  <li>Blog 01</li>
+                  <li>Blog 02</li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Contacts</a>
+              </li>
+            </ul>
+          </div>
+          <div className='header-mobile-bottom'>
+            <div className="header-mobile-user">
+              <div className="header-mobiler-user-img">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className='header-nav background h-14 ps-20 justify-between pe-32 hidden lg:flex'>
         <nav className='pt-4'>
           <ul className='flex justify-around nav-lists'>
             <li>

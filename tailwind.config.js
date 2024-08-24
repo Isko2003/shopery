@@ -12,7 +12,14 @@ export default {
         hard_primary: "#2C742F",
         warning: "#FF8A00",
         danger: "#EA4B48",
-        white:"#FFFFFF",
+        white: "#FFFFFF",
+      },
+      screens: {
+        'xs': '375px',
+        'sm': '640px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
       }
     },
   },
