@@ -14,17 +14,17 @@ import { Autoplay } from 'swiper/modules';
 
 const FeaturedProducts = () => {
   return (
-    <div className='w-[80%] mx-auto p-6'>
-        <div className='flex justify-between pt-3 pb-4'>
+    <div className='w-[80%] mx-auto p-6 pb-20'>
+        <div className='flex justify-between pt-3 pb-4 items-center'>
             <h1 className='text-2xl font-medium'>Featured Products</h1>
-            <div className='flex gap-1'>
-                <span>View All</span>
-                <span><FaArrowRightLong /></span>
+            <div className='flex gap-3 items-center justify-center cursor-pointer view-all'>
+                <span className='text-[#00b207]'>View All</span>
+                <span className='text-[#00b207]'><FaArrowRightLong /></span>
             </div>
         </div>
-        <div className='flex'>
+        <div className='flex justify-center'>
             <Swiper
-            spaceBetween={10}
+            spaceBetween={20}
             centeredSlides={true}
             slidesPerView={5}
             loop={true}

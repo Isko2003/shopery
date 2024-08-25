@@ -4,6 +4,7 @@ import { CiShoppingBasket } from "react-icons/ci";
 import { IoIosHeartEmpty } from "react-icons/io";
 import { IoEyeOutline } from "react-icons/io5";
 import { FaStar } from "react-icons/fa";
+import orange from '../../assets/imgs/orange.png';
 
 export const ProductCard = ({ product }) => {
 
@@ -12,11 +13,14 @@ export const ProductCard = ({ product }) => {
   return (
     <div className='border-[#e5e5e5] border cursor-pointer hover:border-soft_primary transition-all duration-300 product-card'>
         <div className='relative product-img'>
-            <img src={img} alt="apple" />
-            <div className='absolute right-5 top-4 bg-[#e5e5e5] rounded-full p-1 mt-[-4px] opacity-0 invisible'>
+            <div className={`absolute top-3 left-4 w-[90px] h-[30px] bg-danger br-6 ${img === orange ? "block" : "hidden"}`}>
+                <span className='text-center text-white text-sm'>Sale 50%</span>
+            </div>
+            <img src={img} alt="fruit" />
+            <div className='absolute right-3 top-6 bg-[#e5e5e5] rounded-full p-1 mt-[-4px] opacity-0 invisible'>
                 <IoIosHeartEmpty className='text-2xl'/>
             </div>
-            <div className='absolute right-5 top-12 bg-[#e5e5e5] rounded-full p-1 opacity-0 invisible'>
+            <div className='absolute right-3 top-14 bg-[#e5e5e5] rounded-full p-1 opacity-0 invisible'>
                 <IoEyeOutline className='text-2xl'/>
             </div>
         </div>
