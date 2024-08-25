@@ -96,3 +96,96 @@ export const popularCategories = [
         url: ""
     },
 ] 
+
+export const popularProducts = [
+       {
+        id: 0,
+        title: "Green Apple",
+        img: "/apple.png",
+        rating: 4,
+        price: 20.99,
+        discount: 14.99,
+        isSale: true
+    },
+    {
+        id: 1,
+        title: "Orange",
+        img: "/orange.png",
+        rating: 4,
+        price: 20.00,
+        discount: null,
+        isSale: false
+    },
+    {
+        id: 2,
+        title: "Chinese cabbage",
+        img: "/cabbage.png",
+        rating: 5,
+        price: 12.00,
+        discount: null,
+        isSale: false
+    },
+    {
+        id: 3,
+        title: "Green Lettuce",
+        img: "/lettuce.png",
+        rating: 4,
+        price: 9.00,
+        discount: null,
+        isSale: false
+    },
+    {
+        id: 4,
+        title: "Eggplant",
+        img: "/eggplant.png",
+        rating: 4,
+        price: 34.00,
+        discount: null,
+        isSale: false
+    },
+    {
+        id: 5,
+        title: "Eggplant",
+        img: "/eggplant.png",
+        rating: 4,
+        price: 34.00,
+        discount: null,
+        isSale: false
+    },
+    {
+        id: 6,
+        title: "Big Potatoes",
+        img: "/potato.png",
+        rating: 4,
+        price: 20.00,
+        discount: null,
+        isSale: false
+    },
+    {
+        id: 8,
+        title: "Fresh Cauliflower",
+        img: "/cauliflower.png",
+        rating: 4,
+        price: 12.00,
+        discount: null,
+        isSale: false
+    },
+    {
+        id: 9,
+        title: "Green Capsicum",
+        img: "/corn.png",
+        rating: 4,
+        price: 20.99,
+        discount: 9.00,
+        isSale: true
+    },
+    {
+        id: 10,
+        title: "Green Chili",
+        img: "/chili.png",
+        rating: 4,
+        price: 34.00,
+        discount: null,
+        isSale: false
+    },
+]
