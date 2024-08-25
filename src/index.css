@@ -25,6 +25,9 @@
     .categoryCard{
         @apply flex justify-center items-center flex-col border py-2 hover:border-primary transition hover:shadow-[0_0_10px_rgba(0,0,0,0.2)] cursor-pointer rounded-md
     }
+    .justifyBetweenItems{
+        @apply flex justify-between items-center
+    }
 }
 
 .transition {
