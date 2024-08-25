@@ -3,7 +3,7 @@ import MainButton from "../../Common/MainButton";
 
 const Bannar = () => {
     return (
-        <div className='section'>
+        <section className='section'>
             <div className="grid grid-rows-6 grid-cols-2 sm:grid-cols-2  md:grid-cols-3 md:grid-rows-2 gap-3 md:min-h[400px] lg:min-h-[600px] ">
                 <div className="text-white col-span-2 row-span-2 bg-[url('/Bannarpic.png')] bannarHome  ">
                     <div className=" ">
@@ -34,9 +34,7 @@ const Bannar = () => {
                     </div>
                 </div>
             </div>
-
-
-        </div>
+        </section>
     )
 }
 
