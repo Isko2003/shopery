@@ -6,3 +6,25 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+.product-card:hover h3 {
+    color: #00b207;
+    transition: .5s all ease;
+}
+.product-card:hover .shopping-basket {
+    background-color: #00b207;
+    transition: .7s all ease;
+    color: white;
+}
+.product-card:hover .product-img div {
+    opacity: 1;
+    visibility: visible;
+    transition: .5s all ease;
+}
+.product-card .product-img div:hover {
+    background-color: #00b207;
+    transition: .5s all ease;
+    color: white;
+}
+.stars span:not(:last-child) {
+    color: rgba(255, 255, 0, 0.761);
+}
