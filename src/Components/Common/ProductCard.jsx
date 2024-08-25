@@ -1,4 +1,4 @@
-import React from 'react'
+import PropTypes from 'prop-types';
 import { CiStar } from "react-icons/ci";
 import { CiShoppingBasket } from "react-icons/ci";
 import { IoIosHeartEmpty } from "react-icons/io";
@@ -8,7 +8,7 @@ import orange from '../../assets/imgs/orange.png';
 
 export const ProductCard = ({ product }) => {
 
-    const { img, title, price } = product;
+    const { img, title, price, discount } = product;
 
   return (
     <div className='border-[#e5e5e5] border cursor-pointer hover:border-soft_primary transition-all duration-300 product-card'>
@@ -28,8 +28,11 @@ export const ProductCard = ({ product }) => {
             <div className='ms-1 mb-1'>
                 <h3 className='pb-1 text-[#4d4d4d] text-sm'>{title}</h3>
                 <div className='flex gap-1 pb-1'>
-                    <span>&#36;{price}</span>
-                    <span className='line-through text-[#999]'>&#36;{price}</span>
+                      <span>&#36;{price}</span>
+                      {
+                          discount &&
+                          <span className='line-through text-[#999]'>&#36; {discount}</span>
+                      }
                 </div>
                 <div className='stars flex pb-1'>
                     <span><FaStar /></span>
@@ -46,5 +49,12 @@ export const ProductCard = ({ product }) => {
     </div>
   )
 }
-
+ProductCard.propTypes = {
+    product: PropTypes.shape({
+        img: PropTypes.string.isRequired,  
+        title: PropTypes.string.isRequired,
+        price: PropTypes.number.isRequired,
+        discount: PropTypes.number
+    }).isRequired
+};
 export default ProductCard
