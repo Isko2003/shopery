@@ -8,21 +8,20 @@ const ClientCard = ({ client }) => {
     const { img, text, clientName, position } = client;
 
   return (
-    <div className='bg-[#f2f2f2] h-[60vh]'>
-        <div className='w-[80%] mx-auto flex items-center'>
-            <div className='w-[300px] border border-[#e5e5e5] br-6'>
+    <div className='bg-[white] flex justify-between client-box'>
+            <div className='w-[350px] h-[35vh]'>
                 <div className='quotes'>
-                    <RiDoubleQuotesR />
+                    <RiDoubleQuotesR className='text-4xl text-[#649e66]'/>
                 </div>
                 <div className='client-text'>
-                    <p className='w-[290px] h-[120px] text-sm'>{text}</p>
+                    <p className='w-[320px] py-4 text-sm text-left'>{text}</p>
                 </div>
                 <div className='client-info flex justify-between items-center'>
-                    <div className='flex'>
+                    <div className='flex gap-4'>
                         <div className='rounded-full'>
                             <img src={img} alt="client" />
                         </div>
-                        <div>
+                        <div className='flex flex-col justify-center'>
                             <h3>{clientName}</h3>
                             <p>{position}</p>
                         </div>
@@ -36,7 +35,6 @@ const ClientCard = ({ client }) => {
                     </div>
                 </div>
             </div>
-        </div>
     </div>
   )
 }

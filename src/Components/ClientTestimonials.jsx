@@ -12,15 +12,15 @@ import ClientCard from './clientCard';
 
 const ClientTestimonials = () => {
   return (
-    <div className='w-[80%] mx-auto p-6 pb-20'>
-        <div className='flex justify-between pt-3 pb-4 items-center'>
-            <h2>Client Testimonials</h2>
-            <div>
-                <span><FaArrowLeft /></span>
-                <span><FaArrowRight /></span>
+    <div className='w-[100%] mx-auto pb-20 bg-[#f2f2f2] py-6'>
+        <div className='flex justify-between pt-3 pb-4 items-center px-24'>
+            <h1 className='text-3xl font-bold'>Client Testimonials</h1>
+            <div className='flex gap-5'>
+                <span className='bg-white rounded-full w-[40px] h-[40px] flex items-center justify-center'><FaArrowLeft className='cursor-pointer'/></span>
+                <span className='bg-white rounded-full w-[40px] h-[40px] flex items-center justify-center'><FaArrowRight className='cursor-pointer'/></span>
             </div>
         </div>
-        <div className='flex justify-center'>
+        <div className='flex justify-between mx-auto w-[85%]'>
             <Swiper
             spaceBetween={30}
             centeredSlides={true}
@@ -45,11 +45,11 @@ const ClientTestimonials = () => {
             className='mySwiper'
             >
                 {
-                    clientData.map((item,index) => {
+                    clientData.map((item,index) => (
                         <SwiperSlide key={index}>
                             <ClientCard client={item} key={index} />
                         </SwiperSlide>
-                    })
+                    ))
                 }
             </Swiper>
         </div>
