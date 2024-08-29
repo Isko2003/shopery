@@ -28,6 +28,15 @@
     .justifyBetweenItems{
         @apply flex justify-between items-center
     }
+    .flexCenter{
+        @apply flex justify-center items-center
+    }
+    .text5xl{
+        @apply text-2xl sm:text-3xl lg:text-5xl font-semibold
+    }
+    .countTime{
+        @apply text-gray-400 uppercase font-light text-sm
+    }
 }
 
 .transition {
