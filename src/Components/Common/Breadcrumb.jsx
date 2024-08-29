@@ -6,7 +6,7 @@ import { GoChevronRight } from "react-icons/go";
 
 const Breadcrumb = ({links = []}) => {
   return (
-    <section className="section text-gray-500">
+    <section className="section text-gray-500 pt-10 pb-0">
       <div className="flex gap-2 flex-start items-center">
         <Link to="/"><GoHome fontSize={20}/></Link> 
         <GoChevronRight/>  

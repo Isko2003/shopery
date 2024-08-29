@@ -4,7 +4,7 @@ import CountdownTimer from '../Common/CountdownTimer'
 
 const BannerShop = () => {
     return (
-        <section className='section text-white'>
+        <section className='section text-white py-0 my-0'>
             <div className="bg-[url('public/ShopBanner.png')] min-h-96 bannarHome bg-center">
                 <div>
                     <h6 className="font-semibold ">BEST DEALS</h6>
