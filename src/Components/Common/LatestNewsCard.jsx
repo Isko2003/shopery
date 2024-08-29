@@ -10,8 +10,14 @@ const LatestNewsCard = ({ news }) => {
 
   return (
           <div className='blog border-[#e5e5e5] border br-6'>
-            <div className='w-[325px] blog-img'>
+            <div className='w-[325px] blog-img relative'>
                 <img src={img} alt="mandarin" width={"inherit"} height={"inherit"}/>
+                <div className='absolute bottom-2 left-5 bg-white w-[50px] br-6 px-1'>
+                    <div>
+                        <p>18</p>
+                        <p className='text-[#4d4d4d] text-sm'>Nov</p>
+                    </div>
+                </div>
             </div>
             <div className='flex justify-between items-center py-3 px-1'>
                 <div className='flex gap-1 items-center'>
@@ -28,7 +34,7 @@ const LatestNewsCard = ({ news }) => {
                 </div>
             </div>
             <div className='py-3 blog-text'>
-                <p className='text-[17px] w-[300px] px-3'>Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.</p>
+                <p className='text-[17px] w-[300px] px-3 hover:cursor-pointer'>Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.</p>
             </div>
             <div className='flex gap-2 items-center py-2 px-4'>
                 <span className='text-[#00b207] font-bold'>Read More</span>

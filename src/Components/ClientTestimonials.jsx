@@ -1,27 +1,30 @@
 import React from 'react'
-import { latestNewsData } from '../Data/latestNewsData'
-import LatestNewsCard from './Common/LatestNewsCard'
+import { FaArrowLeft } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import '../Styles/swiper.css';
 import { Autoplay } from 'swiper/modules';
+import { clientData } from '../Data/clientTestimonials';
+import ClientCard from './clientCard';
 
-const LatestNews = () => {
+const ClientTestimonials = () => {
   return (
     <div className='w-[80%] mx-auto p-6 pb-20'>
-        <div className='flex justify-center pt-3 pb-4 items-center'>
-            <h1 className='text-3xl font-bold'>Latest News</h1>
+        <div className='flex justify-between pt-3 pb-4 items-center'>
+            <h2>Client Testimonials</h2>
+            <div>
+                <span><FaArrowLeft /></span>
+                <span><FaArrowRight /></span>
+            </div>
         </div>
-        <div className='flex justify-between'>
+        <div className='flex justify-center'>
             <Swiper
             spaceBetween={30}
             centeredSlides={true}
             slidesPerView={3}
-            slidesPerGroup={1}
             loop={true}
             breakpoints={{
                 320: {
@@ -42,11 +45,11 @@ const LatestNews = () => {
             className='mySwiper'
             >
                 {
-                    latestNewsData.map((item,index) => (
+                    clientData.map((item,index) => {
                         <SwiperSlide key={index}>
-                          <LatestNewsCard news={item} key={index}/>
+                            <ClientCard client={item} key={index} />
                         </SwiperSlide>
-                    ))
+                    })
                 }
             </Swiper>
         </div>
@@ -54,4 +57,4 @@ const LatestNews = () => {
   )
 }
 
-export default LatestNews
+export default ClientTestimonials

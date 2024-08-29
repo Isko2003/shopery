@@ -14,5 +14,9 @@ export const latestNewsData = [
     {
         id: 3,
         img: food
-    }
+    },
+    {
+        id: 4,
+        img: egg
+    },
 ]
