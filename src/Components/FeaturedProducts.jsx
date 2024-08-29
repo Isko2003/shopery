@@ -14,7 +14,7 @@ import { Autoplay } from 'swiper/modules';
 
 const FeaturedProducts = () => {
   return (
-    <div className='w-[80%] mx-auto p-6 pb-20'>
+    <div className='section'>
         <div className='flex justify-between pt-3 pb-4 items-center'>
             <h1 className='text-2xl font-medium'>Featured Products</h1>
             <div className='flex gap-3 items-center justify-center cursor-pointer view-all'>

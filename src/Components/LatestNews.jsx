@@ -1,4 +1,3 @@
-import React from 'react'
 import { latestNewsData } from '../Data/latestNewsData'
 import LatestNewsCard from './Common/LatestNewsCard'
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -12,7 +11,7 @@ import { Autoplay } from 'swiper/modules';
 
 const LatestNews = () => {
   return (
-    <div className='w-[80%] mx-auto p-6 pb-20'>
+    <div className='section'>
         <div className='flex justify-center pt-3 pb-4 items-center'>
             <h1 className='text-3xl font-bold'>Latest News</h1>
         </div>
