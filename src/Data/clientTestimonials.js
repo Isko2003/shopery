@@ -22,6 +22,20 @@ export const clientData = [
         text: "Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna dictum, bibendum cursus velit sodales. Donec sed neque eget",
         clientName: 'Dianne Russel',
         position: 'Customer'
+    },
+    {
+        id: 3,
+        img: dianne,
+        text: "Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna dictum, bibendum cursus velit sodales. Donec sed neque eget",
+        clientName: 'Dianne Russel',
+        position: 'Customer'
+    },
+    {
+        id: 3,
+        img: dianne,
+        text: "Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna dictum, bibendum cursus velit sodales. Donec sed neque eget",
+        clientName: 'Dianne Russel',
+        position: 'Customer'
     }
 ]
 
