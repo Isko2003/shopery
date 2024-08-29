@@ -24,16 +24,16 @@ const FeaturedProducts = () => {
         </div>
         <div className='flex justify-center'>
             <Swiper
-            spaceBetween={20}
+            spaceBetween={30}
             centeredSlides={true}
-            slidesPerView={5}
+            slidesPerView={4}
             loop={true}
             breakpoints={{
                 320: {
-                    slidesPerView: 3,
+                    slidesPerView: 1,
                 },
                 768: {
-                    slidesPerView: 4,
+                    slidesPerView: 3,
                 },
                 1280: {
                     slidesPerView: 5,
@@ -49,7 +49,7 @@ const FeaturedProducts = () => {
             {
                 productData.map((item,index) => (
                     <SwiperSlide key={index}>
-                        <ProductCard product={item} key={index}/>
+                        <ProductCard product={item} key={item.id}/>
                     </SwiperSlide>
                 ))
             }
