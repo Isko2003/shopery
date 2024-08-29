@@ -8,14 +8,29 @@
     }
 
     .section {
-        @apply container mx-auto py-10 px-5 sm: p-10 my-10 w-11/12;
+        @apply container mx-auto py-10 px-5 sm:p-10 my-10 w-11/12;
     }
 
     .br-6 {
         @apply rounded-md;
+    }
+
+    .btn-1 {
+        @apply w-fit flex justify-center items-center gap-2 text-primary rounded-3xl font-semibold hover:opacity-[0.9] transition
+    }
+
+    .bannarHome {
+        @apply bg-no-repeat bg-cover flex flex-col justify-center pl-6 rounded-lg
+    }
+    .categoryCard{
+        @apply flex justify-center items-center flex-col border py-2 hover:border-primary transition hover:shadow-[0_0_10px_rgba(0,0,0,0.2)] cursor-pointer rounded-md
+    }
+    .justifyBetweenItems{
+        @apply flex justify-between items-center
     }
 }
 
 .transition {
     transition: .5s all ease;
 }
+

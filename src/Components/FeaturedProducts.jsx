@@ -1,5 +1,5 @@
-import React from 'react'
-import PageContainer from '../Components/Common/PageContainer';
+// import React from 'react'
+// import PageContainer from '../Components/Common/PageContainer';
 import ProductCard from './Common/ProductCard';
 import { FaArrowRightLong } from "react-icons/fa6";
 import { productData } from '../Data/productData';
