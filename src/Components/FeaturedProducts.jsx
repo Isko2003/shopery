@@ -26,7 +26,7 @@ const FeaturedProducts = () => {
             <Swiper
             spaceBetween={30}
             centeredSlides={true}
-            slidesPerView={4}
+            slidesPerView={5}
             loop={true}
             breakpoints={{
                 320: {

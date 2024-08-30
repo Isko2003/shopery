@@ -1,6 +1,7 @@
 import Breadcrumb from '../Components/Common/Breadcrumb'
 import PageContainer from '../Components/Common/PageContainer'
 import BannerShop from '../Components/ShopComps/BannerShop'
+import ShopProd from '../Components/ShopComps/ShopProd'
 
 const shopLinks = [
   { id: 0, title: "Categories", url: "/categories" },
@@ -13,7 +14,7 @@ const Shop = () => {
       <PageContainer>
         <Breadcrumb links={shopLinks} />
         <BannerShop/>
-        Shop
+        <ShopProd />
       </PageContainer>
     </div>
   )

@@ -9,6 +9,7 @@ import { FaShoppingBasket } from "react-icons/fa";
 import { FaPhoneVolume } from "react-icons/fa6";
 import SearchInput from './Common/SearchInput';
 import HeaderCross from './Common/HeaderCross';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const price = 57;
@@ -147,9 +148,13 @@ const Header = () => {
               <span>Home</span>
               <span><MdKeyboardArrowDown className='icon'/></span>
             </li>
-            <li>
+            <li className='relative shop-list'>
               <span>Shop</span>
               <span><MdKeyboardArrowDown className='icon'/></span>
+              <ul className='opacity-0 invisible absolute top-5 left-0 bg-[#e5e5e5] w-[200px] h-[60px] text-black rounded-md'>
+                <li className='mb-2 p-1 hover:bg-[#00b207]'>Shop 01</li>
+                <Link to={'/shop'}><li className='mb-2 p-1 hover:bg-[#00b207]'>Shop 02</li></Link>
+              </ul>
             </li>
             <li>
               <span>Pages</span>

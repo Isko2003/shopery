@@ -41,5 +41,11 @@ export const productData = [
         img: orange,
         title: 'Orange',
         price: '14.99'
-    }
+    },
+    {
+        id: 5,
+        img: potato,
+        title: 'Big Potatoes',
+        price: '14.99'
+    },
 ]
