@@ -1,0 +1,11 @@
+.slider-container {
+    width: 100%;
+    
+    margin: 0 auto;
+  }
+  
+  .slick-slide img {
+    width: 100%; /* Resimlerin slider içinde doğru boyutta görünmesini sağlar */
+    height: auto;
+  }
+  

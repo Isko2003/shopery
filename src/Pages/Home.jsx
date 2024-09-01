@@ -6,7 +6,7 @@ import PopularCategoriesH from '../Components/HomeComps/PopularCategories';
 import PopularProductsH from '../Components/HomeComps/PopularProducts';
 import LatestNews from '../Components/LatestNews';
 import ClientTestimonials from '../Components/ClientTestimonials';
-
+import FollowUS from '../Components/FollowUs'
 const Home = () => {
   return (
     <PageContainer>
@@ -17,6 +17,7 @@ const Home = () => {
       <FeaturedProducts />
       <LatestNews />
       <ClientTestimonials />
+      <FollowUS></FollowUS>
     </PageContainer>
   )
 }
