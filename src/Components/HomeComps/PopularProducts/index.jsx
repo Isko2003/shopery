@@ -7,11 +7,11 @@ const PopularProductsH = () => {
   return (
       <section className="section">
           <div className="justifyBetweenItems">
-              <h3 className="font-semibold text-3xl">Popular Categories</h3>
+              <h3 className="font-semibold text-3xl">Popular Products</h3>
               <MainButton classNames="btn-1" title="View All" icon={<FaArrowRight />} url="" />
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mx-auto my-5">
-              {popularProducts.map(product => { 
+              {popularProducts.slice(1,11).map(product => { 
                   return <ProductCard product={product} key={product.id} />
               })}
           </div>

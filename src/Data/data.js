@@ -98,50 +98,55 @@ export const popularCategories = [
 ] 
 
 export const popularProducts = [
-       {
+    {
         id: 0,
+        title: "Sliced Apple",
+        img: "/src/assets/imgs/apple2.png",
+        rating: 4,
+        price: 20.99,
+        discount: 14.99,
+        isSale: true,
+        isBestSale: true
+    },
+       {
+        id: 1,
         title: "Green Apple",
         img: "/apple.png",
         rating: 4,
         price: 20.99,
         discount: 14.99,
-        isSale: true
+        isSale: true,
+        isBestSale: false
     },
     {
-        id: 1,
+        id: 2,
         title: "Orange",
         img: "/orange.png",
         rating: 4,
         price: 20.00,
         discount: null,
-        isSale: false
+        isSale: false,
+        isBestSale: false
     },
     {
-        id: 2,
+        id: 3,
         title: "Chinese cabbage",
         img: "/cabbage.png",
         rating: 5,
         price: 12.00,
         discount: null,
-        isSale: false
+        isSale: false,
+        isBestSale: false
     },
     {
-        id: 3,
+        id: 4,
         title: "Green Lettuce",
         img: "/lettuce.png",
         rating: 4,
         price: 9.00,
         discount: null,
-        isSale: false
-    },
-    {
-        id: 4,
-        title: "Eggplant",
-        img: "/eggplant.png",
-        rating: 4,
-        price: 34.00,
-        discount: null,
-        isSale: false
+        isSale: false,
+        isBestSale: false
     },
     {
         id: 5,
@@ -150,16 +155,28 @@ export const popularProducts = [
         rating: 4,
         price: 34.00,
         discount: null,
-        isSale: false
+        isSale: false,
+        isBestSale: false
     },
     {
         id: 6,
+        title: "Eggplant",
+        img: "/eggplant.png",
+        rating: 4,
+        price: 34.00,
+        discount: null,
+        isSale: false,
+        isBestSale: false
+    },
+    {
+        id: 7,
         title: "Big Potatoes",
         img: "/potato.png",
         rating: 4,
         price: 20.00,
         discount: null,
-        isSale: false
+        isSale: false,
+        isBestSale: false
     },
     {
         id: 8,
@@ -168,7 +185,8 @@ export const popularProducts = [
         rating: 4,
         price: 12.00,
         discount: null,
-        isSale: false
+        isSale: false,
+        isBestSale: false
     },
     {
         id: 9,
@@ -177,7 +195,8 @@ export const popularProducts = [
         rating: 4,
         price: 20.99,
         discount: 9.00,
-        isSale: true
+        isSale: true,
+        isBestSale: false
     },
     {
         id: 10,
@@ -188,4 +207,35 @@ export const popularProducts = [
         discount: null,
         isSale: false
     },
+    {
+        id: 11,
+        title: "Red Chili",
+        img: "/src/assets/imgs/redChili.png",
+        rating: 4,
+        price: 34.00,
+        discount: null,
+        isSale: false,
+        isBestSale: false
+    },
+    {
+        id: 12,
+        title: "Red Tomato",
+        img: "/src/assets/imgs/redTomato.png",
+        rating: 4,
+        price: 34.00,
+        discount: null,
+        isSale: false,
+        isBestSale: false
+    },
+    {
+        id:13,
+        title: "Surjapur Mango",
+        img: "/src/assets/imgs/mango.png",
+        rating: 4,
+        price: 34.00,
+        discount: null,
+        isSale: false,
+        isBestSale: false
+    }
+    
 ]
