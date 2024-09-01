@@ -20,12 +20,20 @@
     visibility: visible;
     transition: .5s all ease;
 }
-.product-card .product-img div:hover {
+.product-card .product-img div:not(#sale):hover {
+    background-color: #00b207;
+    transition: .5s all ease;
+    color: white;
+}
+.product-card .product-details div:hover{
     background-color: #00b207;
     transition: .5s all ease;
     color: white;
 }
 .stars span:not(:last-child) {
+    color: rgba(255, 255, 0, 0.761);
+}
+.fivestar span{
     color: rgba(255, 255, 0, 0.761);
 }
 .view-all:hover span {

@@ -7,7 +7,7 @@ const Bannar = () => {
             <div className="grid grid-rows-6 sm:grid-rows-3 md:grid-rows-2 grid-cols-2 sm:grid-cols-2  md:grid-cols-3  gap-3 md:min-h[400px] lg:min-h-[600px] ">
                 <div className="text-white col-span-2 row-span-2 bg-[url('/Bannarpic.png')] bannarHome  ">
                     <div className=" ">
-                        <h2 className="text-2xl sm:text-3xl lg:text-5xl font-semibold my-8">Fresh & Healthy
+                        <h2 className="text5xl my-8">Fresh & Healthy
                             <br />
                             Organic Food
                         </h2>
