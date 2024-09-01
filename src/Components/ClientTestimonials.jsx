@@ -13,7 +13,7 @@ import ClientCard from './clientCard';
 const ClientTestimonials = () => {
   return (
     <div className='w-[100%] mx-auto pb-20 bg-[#f2f2f2] py-6'>
-        <div className='flex justify-between pt-3 pb-4 items-center px-24'>
+        <div className='flex justify-between pt-3 pb-4 items-center px-0 sm:px-24 '>
             <h1 className='text-3xl font-bold'>Client Testimonials</h1>
             <div className='flex gap-5'>
                 <span className='bg-white rounded-full w-[40px] h-[40px] flex items-center justify-center'><FaArrowLeft className='cursor-pointer'/></span>

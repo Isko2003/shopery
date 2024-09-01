@@ -4,8 +4,11 @@ import Bannar from '../Components/HomeComps/Bannar';
 import Features from '../Components/HomeComps/Features';
 import PopularCategoriesH from '../Components/HomeComps/PopularCategories';
 import PopularProductsH from '../Components/HomeComps/PopularProducts';
+import HotDeals from '../Components/HomeComps/HotDeals';
 import LatestNews from '../Components/LatestNews';
 import ClientTestimonials from '../Components/ClientTestimonials';
+import DiscountBannar from '../Components/HomeComps/DiscountBannar';
+import ThreeDiscountBannar from '../Components/HomeComps/ThreeDiscountBannar';
 
 const Home = () => {
   return (
@@ -14,6 +17,9 @@ const Home = () => {
       <Features />
       <PopularCategoriesH />
       <PopularProductsH/>
+      <ThreeDiscountBannar />
+      <HotDeals />
+      <DiscountBannar />
       <FeaturedProducts />
       <LatestNews />
       <ClientTestimonials />
