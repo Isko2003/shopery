@@ -4,6 +4,7 @@ import Home from '../Pages/Home';
 import Shop from '../Pages/Shop';
 import AboutUs from '../Pages/AboutUs';
 import ContactUs from '../Pages/ContactUs';
+import Blogs from '../Pages/Blogs';
 
 const Routing = () => {
   return (
@@ -12,6 +13,7 @@ const Routing = () => {
             <Route path='/shop' element={<Shop />}/>
             <Route path='/about' element={<AboutUs />}/>
             <Route path='/contact' element={<ContactUs />}/>
+            <Route path='/blogs' element={<Blogs />}/>
         </Routes>
   )
 }
