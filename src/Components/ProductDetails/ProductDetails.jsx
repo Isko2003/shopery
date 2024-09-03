@@ -19,6 +19,7 @@ import cabbage3 from "../../../public/cabbage-3.png";
 import { Navigation } from "swiper/modules";
 import { FaStar } from "react-icons/fa";
 import brandimg from "../../assets/imgs/brand-img.png";
+import "../../Styles/productSwiper.css";
 const ProductDetails = () => {
   const productCrumbs = [
     { id: 0, title: "Category", url: "/categories" },
@@ -50,6 +51,7 @@ const ProductDetails = () => {
                   draggable: true,
                 }}
                 modules={[Navigation]}
+                className="mySwiper"
               >
                 <SwiperSlide>
                   <img src={cabbage} alt="" />
