@@ -12,6 +12,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "../../Styles/swiper.css";
+import "../../Styles/productSwiper.css";
 import cabbage from "../../assets/imgs/cabbage.png";
 import cabbage1 from "/cabbage-1.png";
 import cabbage2 from "/cabbage-2.png";
@@ -19,10 +20,11 @@ import cabbage3 from "/cabbage-3.png";
 import { Navigation } from "swiper/modules";
 import { FaStar } from "react-icons/fa";
 import brandimg from "../../assets/imgs/brand-img.png";
-import "../../Styles/productSwiper.css";
 import Description from "../ProductTabs/Description";
 import AdditionInfo from "../ProductTabs/AdditionInfo";
 import CustomerFeedback from "../ProductTabs/CustomerFeedback";
+import FeaturedProducts from "../FeaturedProducts";
+import RelatedProducts from "./RelatedProducts";
 const ProductDetails = () => {
   const productCrumbs = [
     { id: 0, title: "Category", url: "/categories" },
@@ -44,7 +46,15 @@ const ProductDetails = () => {
     }
   };
 
-  const [flag, setFlag] = useState(false);
+  const [count, setCount] = useState(0);
+
+  const increaseCount = () => {
+    setCount(count + 1);
+  };
+
+  const decreaseCount = () => {
+    count === 0 ? setCount(count) : setCount(count - 1);
+  };
 
   return (
     <PageContainer>
@@ -196,11 +206,17 @@ const ProductDetails = () => {
             <div className="flex gap-6 items-center py-3">
               <div className="w-[105px] rounded-full h-[43px] bg-[#e5e5e5] p-1">
                 <div className="flex gap-3 items-center justify-center text-center">
-                  <span className="counter-btn flex items-center justify-center cursor-pointer">
+                  <span
+                    className="counter-btn decreasing-btn flex items-center justify-center cursor-pointer"
+                    onClick={() => decreaseCount()}
+                  >
                     -
                   </span>
-                  <span>0</span>
-                  <span className="counter-btn flex items-center justify-center cursor-pointer">
+                  <span>{count}</span>
+                  <span
+                    className="counter-btn increasing-btn flex items-center justify-center cursor-pointer"
+                    onClick={() => increaseCount()}
+                  >
                     +
                   </span>
                 </div>
@@ -276,6 +292,9 @@ const ProductDetails = () => {
           </div>
           <hr />
           <div className="tab-content py-2">{renderTabContent()}</div>
+        </div>
+        <div>
+          <RelatedProducts />
         </div>
       </section>
     </PageContainer>
