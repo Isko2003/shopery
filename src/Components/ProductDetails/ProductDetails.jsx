@@ -1,4 +1,4 @@
-import React from "react";
+import React, { act, useState } from "react";
 import { FaFacebookF } from "react-icons/fa";
 import { CiShoppingBasket } from "react-icons/ci";
 import { CiHeart } from "react-icons/ci";
@@ -13,19 +13,38 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "../../Styles/swiper.css";
 import cabbage from "../../assets/imgs/cabbage.png";
-import cabbage1 from "../../../public/cabbage-1.png";
-import cabbage2 from "../../../public/cabbage-2.png";
-import cabbage3 from "../../../public/cabbage-3.png";
+import cabbage1 from "/cabbage-1.png";
+import cabbage2 from "/cabbage-2.png";
+import cabbage3 from "/cabbage-3.png";
 import { Navigation } from "swiper/modules";
 import { FaStar } from "react-icons/fa";
 import brandimg from "../../assets/imgs/brand-img.png";
 import "../../Styles/productSwiper.css";
+import Description from "../ProductTabs/Description";
+import AdditionInfo from "../ProductTabs/AdditionInfo";
+import CustomerFeedback from "../ProductTabs/CustomerFeedback";
 const ProductDetails = () => {
   const productCrumbs = [
     { id: 0, title: "Category", url: "/categories" },
     { id: 2, title: "Vegetables", url: "/categories/vegetables" },
     { id: 1, title: "Cabbage", url: "/categories/vegetables/cabbage" },
   ];
+  const [activeTab, setActiveTab] = useState("description");
+
+  const renderTabContent = () => {
+    switch (activeTab) {
+      case "description":
+        return <Description />;
+      case "addition":
+        return <AdditionInfo />;
+      case "customer":
+        return <CustomerFeedback />;
+      default:
+        return null;
+    }
+  };
+
+  const [flag, setFlag] = useState(false);
 
   return (
     <PageContainer>
@@ -34,9 +53,9 @@ const ProductDetails = () => {
           <ProductBreadCrumb links={productCrumbs} />
           <div className="breadcrumb-img"></div>
         </div>
-        <div className="flex items-center gap-[20px] h-[]">
+        <div className="flex items-center gap-[20px]">
           <div className="flex items-center w-[700px]">
-            <div className="w-[350px] flex justify-center h-[500px]">
+            <div className="w-[350px] flex justify-center h-[500px] product-swiper">
               <Swiper
                 direction="vertical"
                 spaceBetween={30}
@@ -218,6 +237,45 @@ const ProductDetails = () => {
               <span className="text-[#808080]">Green Cabbage</span>
             </div>
           </div>
+        </div>
+        <div className="tabs py-5">
+          <div className="flex gap-4 justify-center">
+            <div
+              className="cursor-pointer"
+              onClick={() => {
+                setActiveTab("description");
+              }}
+            >
+              Description
+              <div
+                className={`prod-line ${activeTab === "description" ? "visible" : "invisible"}`}
+              ></div>
+            </div>
+            <div
+              className="cursor-pointer"
+              onClick={() => {
+                setActiveTab("addition");
+              }}
+            >
+              Additional Information
+              <div
+                className={`${activeTab === "addition" ? "visible opacity-1 transition-all duration-300 ease-in line2" : "invisible opacity-0"}`}
+              ></div>
+            </div>
+            <div
+              className="cursor-pointer"
+              onClick={() => {
+                setActiveTab("customer");
+              }}
+            >
+              Customer Feedback
+              <div
+                className={`${activeTab === "customer" ? "visible opacity-1 transition-all duration-300 ease-in line3" : "invisible opacity-0"}`}
+              ></div>
+            </div>
+          </div>
+          <hr />
+          <div className="tab-content py-2">{renderTabContent()}</div>
         </div>
       </section>
     </PageContainer>
