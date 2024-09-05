@@ -8,19 +8,6 @@
   overflow: hidden;
   height: 520px;
 }
-.swiper-button-prev {
-  height: 50px;
-  top: 0.3rem;
-  left: 50%;
-  z-index: 9999;
-  transform: translateX(-50%) rotate(90deg);
-}
-.swiper-button-next {
-  top: 96%;
-  left: 50%;
-  z-index: 9999;
-  transform: translateX(-50%) rotate(90deg);
-}
 .swiper-button-prev::after,
 .swiper-button-next::after {
   font-size: 1.5rem;
@@ -120,7 +107,6 @@
   transition: all 0.6s linear;
 }
 .description-text p {
-  width: 648px;
   font-size: 14px;
   line-height: 21px;
   color: #808080;
@@ -167,4 +153,34 @@
 }
 .customer-text p {
   color: #808080;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  top: 37% !important;
+}
+
+@media screen and (min-width: 992px) {
+  .swiper-button-prev {
+    height: 50px;
+    top: 0.3rem;
+    left: 50%;
+    z-index: 9999;
+    transform: translateX(-50%) rotate(90deg);
+  }
+  .swiper-button-next {
+    top: 96%;
+    left: 50%;
+    z-index: 9999;
+    transform: translateX(-50%) rotate(90deg);
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .product-swiper {
+    height: 170px !important;
+  }
+  .product-swiper .swiper-wrapper {
+    height: 170px !important;
+  }
 }

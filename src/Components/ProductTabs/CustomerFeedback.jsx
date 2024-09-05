@@ -11,9 +11,9 @@ import { FaStar } from "react-icons/fa";
 
 const CustomerFeedback = () => {
   return (
-    <section className="flex gap-5 w-[85%] mx-auto py-1 justify-between">
-      <div className="customer-feedback">
-        <section className="mb-[40px] w-[700px]">
+    <section className="block xlg:flex gap-5 w-[85%] mx-auto py-1 justify-between">
+      <div className="customer-feedback xl:w-8/12 lg:w-7/12 xlg:w-6/12">
+        <section className="mb-[40px]">
           <div className="flex items-center justify-between py-2">
             <div className="flex items-center gap-2">
               <div className="customer-img w-[50px] h-[50px] rounded-full">
@@ -204,9 +204,9 @@ const CustomerFeedback = () => {
           <hr />
         </section>
       </div>
-      <div>
+      <div className="customer-img xl:w-4/12 lg:w-5/12 xlg:w-6/12">
         <div className="man-img">
-          <div className="w-[451px] h-[300px] cursor-pointer relative">
+          <div className="w-[451px] lg:w-[420px] xlg:w-[440px] h-[300px] cursor-pointer relative">
             <img
               src={manwithbox}
               alt="man-with-box"
@@ -220,7 +220,7 @@ const CustomerFeedback = () => {
               </a>
             </div>
           </div>
-          <div className="w-[451px] discount">
+          <div className="w-[451px] lg:w-[420px] xlg:w-[440px] discount">
             <div className="flex justify-between">
               <div className="flex gap-2 items-center">
                 <span>
