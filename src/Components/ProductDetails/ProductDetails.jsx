@@ -132,7 +132,7 @@ const ProductDetails = () => {
             </div>
           </div>
           <section className="flex justify-center">
-            <div className="product-details w-[570px] h-[576px]">
+            <div className="product-details">
               <div className="product-title flex items-center gap-2 pb-2">
                 <h1 className="font-bold text-3xl">Chinese Cabbage</h1>
                 <div className="bg-soft_primary w-[100px] h-[32px] p-[10px] br-6">
@@ -183,7 +183,7 @@ const ProductDetails = () => {
                 </span>
               </div>
               <hr className="py-1" />
-              <div className="flex justify-between">
+              <div className="block sm:flex sm:justify-between">
                 <div className="flex items-center py-3 gap-2">
                   <span>Brand: </span>
                   <a href="#">
@@ -209,7 +209,7 @@ const ProductDetails = () => {
                 </div>
               </div>
               <div className="product-content py-3">
-                <p className="capitalize text-[#808080] text-[14px] w-[500px]">
+                <p className="capitalize text-[#808080] text-[14px] sm:w-[500px]">
                   Class aptent taciti sociosqu ad litora torquent per conubia
                   nostra, per inceptos himenaeos. Nulla nibh diam, blandit vel
                   consequat nec, ultrices et ipsum. Nulla varius magna a
@@ -217,7 +217,7 @@ const ProductDetails = () => {
                 </p>
               </div>
               <hr className="pt-3" />
-              <div className="flex gap-6 items-center py-3">
+              <div className="block sm:flex sm:gap-6 sm:items-center py-3">
                 <div className="w-[105px] rounded-full h-[43px] bg-[#e5e5e5] p-1">
                   <div className="flex gap-3 items-center justify-center text-center">
                     <span
@@ -258,19 +258,22 @@ const ProductDetails = () => {
                   Vegetables
                 </a>
               </div>
-              <div className="flex gap-3 pt-2">
-                <h3>Tag: </h3>
-                <span className="text-[#808080]">Vegetables</span>
-                <span className="text-[#808080]">Healthy</span>
-                <span className="text-[#808080]">Chinese</span>
-                <span className="text-[#808080]">Cabbage</span>
-                <span className="text-[#808080]">Green Cabbage</span>
+              <div className="flex gap-2 pt-2">
+                <div>
+                  <h3>Tag: </h3>
+                </div>
+                <div className="flex gap-2">
+                  <span className="text-[#808080]">Vegetables</span>
+                  <span className="text-[#808080]">Healthy</span>
+                  <span className="text-[#808080]">Chinese</span>
+                  <span className="text-[#808080]">Cabbage</span>
+                </div>
               </div>
             </div>
           </section>
         </div>
         <div className="tabs py-5">
-          <div className="flex gap-4 justify-center">
+          <div className="flex gap-2 sm:gap-4 justify-center">
             <div
               className="cursor-pointer"
               onClick={() => {

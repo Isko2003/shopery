@@ -5,7 +5,7 @@ import { GoChevronRight } from "react-icons/go";
 
 const ProductBreadCrumb = ({ links = [] }) => {
   return (
-    <section className="section text-gray-500 pt-10 pb-0 absolute top-4 left-10">
+    <section className="section text-gray-500 pt-10 pb-0 absolute top-4 left-7 sm:left-10">
       <div className="flex gap-2 flex-start items-center">
         <Link to="/">
           <GoHome fontSize={20} />

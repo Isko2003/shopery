@@ -184,3 +184,10 @@
     height: 170px !important;
   }
 }
+
+@media screen and (min-width: 375px) and (max-width: 400px) {
+  .line3,
+  .line2 {
+    width: 120px !important;
+  }
+}

@@ -206,7 +206,7 @@ const CustomerFeedback = () => {
       </div>
       <div className="customer-img xl:w-4/12 lg:w-5/12 xlg:w-6/12">
         <div className="man-img">
-          <div className="w-[451px] lg:w-[420px] xlg:w-[440px] h-[300px] cursor-pointer relative">
+          <div className="xlg:w-[350px] xl:w-[451px] cursor-pointer relative">
             <img
               src={manwithbox}
               alt="man-with-box"
@@ -220,7 +220,7 @@ const CustomerFeedback = () => {
               </a>
             </div>
           </div>
-          <div className="w-[451px] lg:w-[420px] xlg:w-[440px] discount">
+          <div className="xlg:w-[350px] xl:w-[451px] discount">
             <div className="flex justify-between">
               <div className="flex gap-2 items-center">
                 <span>
