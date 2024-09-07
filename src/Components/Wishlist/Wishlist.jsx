@@ -160,7 +160,7 @@ const Wishlist = () => {
             </table>
           </div>
           <div className="product-table-responsive flex items-center flex-col">
-            <div className="shopping-card p-3">
+            <div className="shopping-card p-3 relative">
               <div className="card-img-wrapper">
                 <img src={apple} alt="apple" />
               </div>
@@ -180,8 +180,13 @@ const Wishlist = () => {
                   </span>
                 </button>
               </div>
+              <div className="absolute top-[24px] left-[100%]">
+                <button className="">
+                  <IoMdCloseCircleOutline className="text-2xl text-[#808080]" />
+                </button>
+              </div>
             </div>
-            <div className="shopping-card p-3">
+            <div className="shopping-card p-3 relative">
               <div className="card-img-wrapper">
                 <img src={orange} alt="fruit" />
               </div>
@@ -201,8 +206,13 @@ const Wishlist = () => {
                   </span>
                 </button>
               </div>
+              <div className="absolute top-[24px] left-[100%]">
+                <button className="">
+                  <IoMdCloseCircleOutline className="text-2xl text-[#808080]" />
+                </button>
+              </div>
             </div>
-            <div className="shopping-card p-3">
+            <div className="shopping-card p-3 relative">
               <div className="card-img-wrapper">
                 <img src={orange} alt="fruit" />
               </div>
@@ -220,6 +230,11 @@ const Wishlist = () => {
                   <span className="flex items-center text-center ms-8">
                     Add To Cart
                   </span>
+                </button>
+              </div>
+              <div className="absolute top-[24px] left-[100%]">
+                <button className="">
+                  <IoMdCloseCircleOutline className="text-2xl text-[#808080]" />
                 </button>
               </div>
             </div>
