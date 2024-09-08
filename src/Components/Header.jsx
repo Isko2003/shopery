@@ -164,8 +164,8 @@ const Header = () => {
               <span>Blog</span>
               <span><MdKeyboardArrowDown className='icon'/></span>
             </li>
-            <li>About Us</li>
-            <li>Contact Us</li>
+            <li ><Link to={'/about'}>About Us</Link></li>
+            <li ><Link to={'/contact'}>Contact Us</Link></li>
           </ul>
         </nav>
         <div className='header-contact flex gap-2 items-center cursor-pointer'>
