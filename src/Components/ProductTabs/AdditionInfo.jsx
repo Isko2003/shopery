@@ -5,7 +5,7 @@ import { MdDiscount } from "react-icons/md";
 
 const AdditionInfo = () => {
   return (
-    <section className="flex gap-5 w-[85%] mx-auto py-1 justify-between">
+    <section className="block md:flex gap-5 w-[85%] mx-auto py-1 justify-between">
       <div>
         <ul className="additional-info">
           <li>
@@ -36,7 +36,7 @@ const AdditionInfo = () => {
       </div>
       <div>
         <div className="man-img">
-          <div className="w-[451px] h-[300px] cursor-pointer relative">
+          <div className="xlg:w-[350px] xl:w-[451px] cursor-pointer relative">
             <img
               src={manwithbox}
               alt="man-with-box"
@@ -50,7 +50,7 @@ const AdditionInfo = () => {
               </a>
             </div>
           </div>
-          <div className="w-[451px] discount">
+          <div className="xlg:w-[350px] xl:w-[451px] discount">
             <div className="flex justify-between">
               <div className="flex gap-2 items-center">
                 <span>

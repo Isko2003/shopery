@@ -6,10 +6,10 @@ import { MdDiscount } from "react-icons/md";
 
 const Description = () => {
   return (
-    <section className="flex gap-5 w-[85%] mx-auto py-1">
+    <section className="xlg:flex gap-5 w-[85%] mx-auto py-1 description-section">
       <div className="description-text">
         <div className="py-1">
-          <p className="py-1">
+          <p className="py-1 xlg:w-[500px]">
             Sed commodo aliquam dui ac porta. Fusce ipsum felis, imperdiet at
             posuere ac, viverra at mauris. Maecenas tincidunt ligula a sem
             vestibulum pharetra. Maecenas auctor tortor lacus, nec laoreet nisi
@@ -60,23 +60,25 @@ const Description = () => {
           </p>
         </div>
       </div>
-      <div>
+      <div className="man-img-wrapper">
         <div className="man-img">
-          <div className="w-[451px] h-[300px] cursor-pointer relative">
-            <img
-              src={manwithbox}
-              alt="man-with-box"
-              width={"inherit"}
-              height={"inherit"}
-              className="object-cover"
-            />
+          <div className="mb-7 cursor-pointer relative">
+            <div>
+              <img
+                src={manwithbox}
+                alt="man-with-box"
+                width={"inherit"}
+                height={"inherit"}
+                className="object-cover"
+              />
+            </div>
             <div className="play-btn absolute top-[50%] left-[50%] translate-x-[-30%] translate-y-[-50%]">
               <a href="https://youtu.be/JkaxUblCGz0" className="video-url">
                 <FaPlay className="text-2xl" />
               </a>
             </div>
           </div>
-          <div className="w-[451px] discount">
+          <div className="xlg:w-[350px] xl:w-[451px] discount py-7">
             <div className="flex justify-between">
               <div className="flex gap-2 items-center">
                 <span>

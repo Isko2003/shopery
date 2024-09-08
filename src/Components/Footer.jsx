@@ -52,8 +52,8 @@ const Footer = () => {
           </div>
         </div>
         <div className="w-[100%] flex flex-col justify-center items-center bg-[#1A1A1A]">
-          <div className="bg-[#1A1A1A] flex flex-col gap-4 lg:flex-row justify-center items-start w-[80%]  mt-8 mb-8">
-            <div className="flex justify-center flex-col items-start gap-4 w-[50%] lg:w-[25%]">
+          <div className="bg-[#1A1A1A] grid grid-cols-2 grid-row-3 justify-center items-start w-[80%] gap-x-8  mt-8 mb-8 xl:grid-cols-5 grid-row-1 ">
+            <div className="flex justify-center flex-col items-start gap-4 ">
               <div><img src="https://shopery.netlify.app/main/src/images/logo-nl-white.png" alt="" /></div>
               <p className="text-[#999999] text-[16px] w-[100%]">Morbi cursus porttitor enim lobortis molestie. Duis gravida turpis dui, eget bibendum magna congue nec.</p>
               <div><a href="" className="text-[#ffffff] text-[16px] border-b border-[#00b207] hover:text-[#00b207]">(219)555-0114</a>  or  <a href="" className="text-[#ffffff] text-[16px] border-b border-[#00b207] hover:text-[#00b207]">Proxy@gmail.com</a></div>
@@ -111,7 +111,6 @@ const Footer = () => {
           </div>
         </div>
         </div>
-        
       </footer>
     </>
   );
