@@ -1,0 +1,32 @@
+.card-table-title {
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.03em;
+    font-weight: 500;
+    color: #808080;
+    text-transform: uppercase;
+    padding: 16px 24px !important;
+    border-color: #e5e5e5 !important;
+  }
+  .order-summary ,.coupon-section{
+    border: 1px solid #e5e5e5;
+  }
+  table{
+    border-collapse: collapse;
+  }
+  tr {
+    border-bottom: 1px solid #e5e5e5;
+  }
+  .order-summary-details div:not(.place-order){
+    border-bottom: 1px solid #e5e5e5;
+  }
+  .cart-table-action-btn{
+    border: 1px solid #e5e5e5;
+  }
+.coupon-input-box{
+    border: 1px solid #e5e5e5;
+    border-radius: 20px;
+}
+.billing_content-card{
+    border-bottom: 1px solid #e5e5e5;
+}

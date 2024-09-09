@@ -249,9 +249,14 @@ const Header = () => {
                     Wishlist
                   </li>
                 </Link>
-                <li className="mb-2 p-[6px] ps-3 hover:bg-[#00b207]">
+                <Link to={"/shopping-cart"}><li className="mb-2 p-[6px] ps-3 hover:bg-[#00b207]">
                   Shopping Cart
                 </li>
+                </Link>
+                <Link to={"/checkout"}><li className="mb-2 p-[6px] ps-3 hover:bg-[#00b207]">
+                  Checkout
+                </li>
+                </Link>
                 <li className="mb-2 p-[6px] ps-3 hover:bg-[#00b207]">
                   Sign In
                 </li>

@@ -6,6 +6,8 @@ import ContactUs from "../Pages/ContactUs";
 import Blogs from "../Pages/Blogs";
 import ProductDetails from "../Components/ProductDetails/ProductDetails";
 import BlogSingle from "../Components/BlogsComps/BlogSingle";
+import Cart from "../Components/ShoppingCart/Cart";
+import Checkout from "../Components/Checkout/Checkout";
 
 const Routing = () => {
   return (
@@ -17,6 +19,8 @@ const Routing = () => {
       <Route path="/contact" element={<ContactUs />} />
       <Route path="/blogs" element={<Blogs />} />
       <Route path="/blogs/:id" element={<BlogSingle />} />
+      <Route path="/shopping-cart" element={<Cart />} />
+      <Route path="/checkout" element={<Checkout/>} />
     </Routes>
   );
 };
