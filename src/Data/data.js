@@ -27,73 +27,85 @@ export const popularCategories = [
         id: 0,
         title: "Fresh Fruit",
         imgUrl: "/fresh_fruit_C.png",
-        url: ""
+        url: "",
+        amount:134
     },
     {
         id: 1,
         title: "Fresh Vegetables",
         imgUrl: "/vegetables_ca.png",
-        url: ""
+        url: "",
+        amount: 150
     },
     {
         id: 0,
         title: "Meat & Fish",
         imgUrl: "/meatandfish_ca.png",
-        url: ""
+        url: "",
+        amount: 112
     },
     {
         id: 0,
         title: "Snacks",
         imgUrl: "/snacks_C.png",
-        url: ""
+        url: "",
+        amount: 123
     },
     {
         id: 0,
         title: "Beverages",
         imgUrl: "/beverages_c.png",
-        url: ""
+        url: "",
+        amount: 180
     },
     {
         id: 0,
         title: "Beauty & Health",
         imgUrl: "/beuaty_healthy_ca.png",
-        url: ""
+        url: "",
+        amount: 156
     },
     {
         id: 0,
         title: "Bread & Bakery",
         imgUrl: "/bread_bakery_ca.png",
-        url: ""
+        url: "",
+        amount: 180
     },
     {
         id: 0,
         title: "Baking Needs",
         imgUrl: "/baking_needs_Ca.png",
-        url: ""
+        url: "",
+        amount: 155
     },
     {
         id: 0,
         title: "Cooking",
         imgUrl: "/cooking_ca.png",
-        url: ""
+        url: "",
+        amount: 190
     },
     {
         id: 0,
         title: "Diabetic Food",
         imgUrl: "/diabetic_foods_ca.png",
-        url: ""
+        url: "",
+        amount: 234
     },
     {
         id: 0,
         title: "Dish Detergents",
         imgUrl: "/dish_detergents_Ca.png",
-        url: ""
+        url: "",
+        amount: 164
     },
     {
         id: 0,
         title: "Oil",
         imgUrl: "/oil_ca.png",
-        url: ""
+        url: "",
+        amount: 190
     },
 ] 
 
@@ -238,4 +250,26 @@ export const popularProducts = [
         isBestSale: false
     }
     
+]
+export const popularTags = ["Healthy", "Low fat", "Vegetarian", "Bread", "Kid foods", "Vitamins", "Snacks", "Tiffin", "Meat", "Launch", "Dinner"]
+
+export const recentlyAddedBlogs = [
+    {
+        id: 0,
+        title: "Curabitur porttitor orci eget nequ accumsan.",
+        img:"/blog10.png",
+        date: "Apr 25, 2021"
+    },
+    {
+        id: 1,
+        title: "Donec mattis arcu faucibus suscipit viverra.",
+        img:"/blog1.png",
+        date: "Apr 25, 2021"
+    },
+    {
+        id: 2,
+        title: "Quisque posuere tempus rutrum. Integer velit ex.",
+        img:"/blog3.png",
+        date: "Apr 25, 2021"
+    },
 ]

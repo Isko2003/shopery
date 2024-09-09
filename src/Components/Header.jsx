@@ -78,9 +78,11 @@ const Header = () => {
             ></path>
           </svg>
         </div>
-        <div className="header-img cursor-pointer">
-          <img src={logo} alt="shopery-logo" />
-        </div>
+        <Link to={"/"}>
+          <div className="header-img cursor-pointer">
+            <img src={logo} alt="shopery-logo" />
+          </div>
+        </Link>
         <div>
           <SearchInput />
         </div>
@@ -205,32 +207,79 @@ const Header = () => {
                 <MdKeyboardArrowDown className="icon" />
               </span>
             </li>
-            <li className="relative shop-list">
+            <li className="relative shop-list z-[9999]">
               <span>Shop</span>
               <span>
                 <MdKeyboardArrowDown className="icon" />
               </span>
-              <ul className="opacity-0 invisible absolute top-5 left-0 bg-[#e5e5e5] w-[200px] h-[60px] text-black rounded-md">
+              <ul className="opacity-0 invisible absolute top-5 left-0 bg-[#e5e5e5] w-[200px] h-[60px] text-black rounded-md z-[9999]">
                 <li className="mb-2 p-1 hover:bg-[#00b207]">Shop 01</li>
                 <Link to={"/shop"}>
                   <li className="mb-2 p-1 hover:bg-[#00b207]">Shop 02</li>
                 </Link>
               </ul>
             </li>
-            <li>
+            <li className="relative shop-list">
               <span>Pages</span>
               <span>
                 <MdKeyboardArrowDown className="icon" />
               </span>
+              <ul className="opacity-0 invisible absolute top-5 left-0 bg-[#e5e5e5] w-[200px] text-black rounded-md z-[9999]">
+                <li className="mb-2 p-[6px] ps-3 hover:bg-[#00b207]">
+                  User Dashboard
+                </li>
+                <Link to={"/shop"}>
+                  <li className="mb-2 p-[6px] ps-3 hover:bg-[#00b207]">
+                    Order History
+                  </li>
+                </Link>
+                <li className="mb-2 p-[6px] ps-3 hover:bg-[#00b207]">
+                  Order Details
+                </li>
+                <li className="mb-2 p-[6px] ps-3 hover:bg-[#00b207]">
+                  Account Settings
+                </li>
+                <Link to={"/product-details"}>
+                  <li className="mb-2 p-[6px] ps-3 hover:bg-[#00b207]">
+                    Product Details
+                  </li>
+                </Link>
+                <Link to={"/wishlist"}>
+                  <li className="mb-2 p-[6px] ps-3 hover:bg-[#00b207]">
+                    Wishlist
+                  </li>
+                </Link>
+                <li className="mb-2 p-[6px] ps-3 hover:bg-[#00b207]">
+                  Shopping Cart
+                </li>
+                <li className="mb-2 p-[6px] ps-3 hover:bg-[#00b207]">
+                  Sign In
+                </li>
+                <li className="mb-2 p-[6px] ps-3 hover:bg-[#00b207]">
+                  Create Account
+                </li>
+                <li className="mb-2 p-[6px] ps-3 hover:bg-[#00b207]">Faq</li>
+                <li className="mb-2 p-[6px] ps-3 hover:bg-[#00b207]">
+                  Error 404
+                </li>
+              </ul>
             </li>
-            <li>
+            <li className="relative shop-list">
               <span>Blog</span>
               <span>
                 <MdKeyboardArrowDown className="icon" />
               </span>
+              <ul className="opacity-0 invisible absolute top-5 left-0 bg-[#e5e5e5] w-[200px] text-black rounded-md z-[9999]">
+                <li className="mb-2 p-[6px] ps-3 hover:bg-[#00b207]">
+                  Blog List
+                </li>
+                <li className="mb-2 p-[6px] ps-3 hover:bg-[#00b207]">
+                  Single Blog
+                </li>
+              </ul>
             </li>
-            <li>About Us</li>
-            <li>Contact Us</li>
+            <li ><Link to={'/about'}>About Us</Link></li>
+            <li ><Link to={'/contact'}>Contact Us</Link></li>
           </ul>
         </nav>
         <div className="header-contact flex gap-2 items-center cursor-pointer">

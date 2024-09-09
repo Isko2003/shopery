@@ -22,6 +22,12 @@
     .bannarHome {
         @apply bg-no-repeat bg-cover flex flex-col justify-center pl-6 rounded-lg
     }
+    .mainInput{
+        @apply border-2 rounded-md p-2 border-[#E6E6E6]
+    }
+    .mainInputBox{
+        @apply flex flex-col justify-center gap-2
+    }
     .categoryCard{
         @apply flex justify-center items-center flex-col border py-2 hover:border-primary transition hover:shadow-[0_0_10px_rgba(0,0,0,0.2)] cursor-pointer rounded-md
     }
@@ -37,9 +43,19 @@
     .countTime{
         @apply text-gray-400 uppercase font-light text-sm
     }
+    .filterTitle{
+        @apply font-semibold text-2xl mb-5
+    }
 }
 
 .transition {
     transition: .5s all ease;
 }
-
+/* blogcard hover design  */
+.blogCard:hover img{
+    transform: scale(1.1);
+    overflow: hidden
+} 
+.blogCard:hover .title{
+    color: #2C742F;
+} 

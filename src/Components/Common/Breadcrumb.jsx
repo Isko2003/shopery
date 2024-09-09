@@ -13,7 +13,7 @@ const Breadcrumb = ({links = []}) => {
         {links.map(({ id, url, title }) => {
           return <>
             <Link key={id} to={url} className={`${id == 1 ? "text-primary" : ""}`}>{title}</Link>
-            {id != 1 && <GoChevronRight />}
+            {id != links.length - 1 && <GoChevronRight />}
           </>
           })}
       </div>
