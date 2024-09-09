@@ -49,3 +49,4 @@ export const productData = [
     price: "14.99",
   },
 ];
+

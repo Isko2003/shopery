@@ -6,6 +6,9 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+body{
+  overflow-x: hidden;
+}
 .product-card:hover h3 {
   color: #00b207;
   transition: 0.5s all ease;
