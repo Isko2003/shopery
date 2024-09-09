@@ -43,7 +43,7 @@ export const productData = [
     price: "14.99",
   },
   {
-    id: 5,
+    id: 7,
     img: potato,
     title: "Big Potatoes",
     price: "14.99",

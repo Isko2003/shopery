@@ -36,7 +36,7 @@ const ContactUs = () => {
                 </svg>
               </Link>
             </li>
-            <li className="text-[rgb(128,128,128)] text-[22px]"> > </li>
+            <li className="text-[rgb(128,128,128)] text-[22px]"></li>
             <li className="text-[rgb(15,120,10)] font-medium text-[20px]">
               Contact
             </li>
