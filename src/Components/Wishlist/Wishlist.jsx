@@ -159,7 +159,7 @@ const Wishlist = () => {
               </tbody>
             </table>
           </div>
-          <div className="product-table-responsive flex items-center flex-col">
+          <div className="product-table-responsive items-center flex-col hidden">
             <div className="shopping-card p-3 relative">
               <div className="card-img-wrapper">
                 <img src={apple} alt="apple" />
