@@ -8,7 +8,7 @@ import Deliver from "../../src/assets/imgs/Deliver.png";
 import ClientTestimonials from "../Components/ClientTestimonials";
 import AboutSlider from "../Components/AboutSlider/AboutSlider";
 import { Link } from "react-router-dom";
-import FoodStoreSlider from '../Components/FoodStoreSlider/FoodStoreSlider'
+import FoodStoreSlider from "../Components/FoodStoreSlider/FoodStoreSlider";
 const AboutUs = () => {
   return (
     <div>
@@ -43,7 +43,7 @@ const AboutUs = () => {
                   </svg>
                 </Link>
               </li>
-              <li className="text-[rgb(128,128,128)] text-[22px]"> > </li>
+              <li className="text-[rgb(128,128,128)] text-[22px]"></li>
               <li className="text-[rgb(15,120,10)] font-medium text-[20px]">
                 About
               </li>
@@ -86,7 +86,9 @@ const AboutUs = () => {
                 tincidunt a a mi. Nulla eu eros consequat tortor tincidunt
                 feugiat.
               </p>
-              <div className="w-[100%] md:hidden block"><FoodStoreSlider></FoodStoreSlider></div>
+              <div className="w-[100%] md:hidden block">
+                <FoodStoreSlider></FoodStoreSlider>
+              </div>
               <div className="md:flex justify-center items-center hidden">
                 <div className="flex flex-col justify-center items-start gap-8">
                   <div className="flex justify-center items-center gap-4">
@@ -112,9 +114,7 @@ const AboutUs = () => {
                       </svg>
                     </div>
                     <div>
-                      <h5  className="text-[#fff]">
-                        100% Organic Food
-                      </h5>
+                      <h5 className="text-[#fff]">100% Organic Food</h5>
                       <p className="text-[#666666]">
                         100% healthy & Fresh food.
                       </p>
@@ -365,8 +365,7 @@ const AboutUs = () => {
             Nulla et rhoncus neque. Duis non diam eget est luctus tincidunt a a
             mi.
           </p>
-    <AboutSlider></AboutSlider>
-          
+          <AboutSlider></AboutSlider>
         </div>
         <div>
           <ClientTestimonials></ClientTestimonials>

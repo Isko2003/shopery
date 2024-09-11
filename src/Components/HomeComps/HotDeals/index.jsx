@@ -25,7 +25,11 @@ const HotDeals = () => {
             return (
               <div
                 key={product.id}
-                className={isFirstProduct ? "col-span-1 sm:col-span-2 row-span-1 sm:row-span-2" : ""}
+                className={
+                  isFirstProduct
+                    ? "col-span-1 sm:col-span-2 row-span-1 sm:row-span-2"
+                    : ""
+                }
               >
                 <ProductCard
                   product={product}
