@@ -1,11 +1,29 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import ShopProdCard from './ShopProdCard';
 import { shopProducts } from '../../Data/shopProducts';
 import '../../Styles/shop.css';
 import { IoIosClose } from "react-icons/io";
+import supabase from '../../../supabaseClient';
 
 
 const ShopProd = () => {
+    const [products, setProducts] = useState(null)
+    useEffect(() => {
+        const fetchData = async () => {
+            const supabaseUrl = await supabase.from('Shopery_Data').select('*');
+            console.log(supabaseUrl)
+            if (error) {
+                console.error(error);
+            } else {
+                setProducts(data);
+            }
+        };
+
+        fetchData();
+        console.log(products);
+        
+    }, []); 
+
     const [selectedValues, setSelectedValues] = useState({
         select1: '',
         select2: '',

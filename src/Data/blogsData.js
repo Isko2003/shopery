@@ -22,35 +22,35 @@ export const blogs = [
         feedbacks: [
             {
                 id: 0,
-                imgUrl: "",
+                imgUrl: "/human2.svg",
                 fullname: "Devon Lane",
                 date: "26 Apr, 2024",
                 comment: "In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam."
             },
             {
                 id: 1,
-                imgUrl: "",
+                imgUrl: "/human3.svg",
                 fullname: "Jacob Jones",
                 date: "23 July, 2024",
                 comment: "In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam."
             },
             {
                 id: 2,
-                imgUrl: "",
+                imgUrl: "/human4.svg",
                 fullname: "Jane Cooper",
                 date: "26 June, 2023",
                 comment: "In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam."
             },
             {
                 id: 3,
-                imgUrl: "",
+                imgUrl: "/human5.svg",
                 fullname: "Darrell Steward",
                 date: "28 Jan, 2024",
                 comment: "In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam."
             },
             {
                 id: 4,
-                imgUrl: "",
+                imgUrl: "/human6.svg",
                 fullname: "Annette Black",
                 date: "26 Aug, 2024",
                 comment: "Nulla molestie interdum ultricies. "
@@ -59,13 +59,13 @@ export const blogs = [
         author: {
             fullname: "Cameron Williamson",
             createdTime: "4 April, 2021",
-            imgUrl: "",
+            imgUrl: "/human1.svg",
             facebookUrl: "",
             instagramUrl: "",
             pinterestUrl: "",
             twitterUrl: "",
             otherUrl: "",
-        }
+        },
     },
     {
         id: 2,
@@ -90,35 +90,35 @@ export const blogs = [
         feedbacks: [
             {
                 id: 0,
-                imgUrl: "",
+                imgUrl: "/human2.svg",
                 fullname: "Devon Lane",
                 date: "26 Apr, 2024",
                 comment: "In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam."
             },
             {
                 id: 1,
-                imgUrl: "",
+                imgUrl: "/human3.svg",
                 fullname: "Jacob Jones",
                 date: "23 July, 2024",
                 comment: "In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam."
             },
             {
                 id: 2,
-                imgUrl: "",
+                imgUrl: "/human4.svg",
                 fullname: "Jane Cooper",
                 date: "26 June, 2023",
                 comment: "In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam."
             },
             {
                 id: 3,
-                imgUrl: "",
+                imgUrl: "/human5.svg",
                 fullname: "Darrell Steward",
                 date: "28 Jan, 2024",
                 comment: "In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam."
             },
             {
                 id: 4,
-                imgUrl: "",
+                imgUrl: "/human6.svg",
                 fullname: "Annette Black",
                 date: "26 Aug, 2024",
                 comment: "Nulla molestie interdum ultricies. "
@@ -127,7 +127,7 @@ export const blogs = [
         author: {
             fullname: "Cameron Williamson",
             createdTime: "4 April, 2021",
-            imgUrl: "",
+            imgUrl: "/human1.svg",
             facebookUrl: "",
             instagramUrl: "",
             pinterestUrl: "",
@@ -169,35 +169,35 @@ export const blogs = [
         feedbacks: [
             {
                 id: 0,
-                imgUrl: "",
+                imgUrl: "/human2.svg",
                 fullname: "Devon Lane",
                 date: "26 Apr, 2024",
                 comment: "In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam."
             },
             {
                 id: 1,
-                imgUrl: "",
+                imgUrl: "/human3.svg",
                 fullname: "Jacob Jones",
                 date: "23 July, 2024",
                 comment: "In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam."
             },
             {
                 id: 2,
-                imgUrl: "",
+                imgUrl: "/human4.svg",
                 fullname: "Jane Cooper",
                 date: "26 June, 2023",
                 comment: "In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam."
             },
             {
                 id: 3,
-                imgUrl: "",
+                imgUrl: "/human5.svg",
                 fullname: "Darrell Steward",
                 date: "28 Jan, 2024",
                 comment: "In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam."
             },
             {
                 id: 4,
-                imgUrl: "",
+                imgUrl: "/human6.svg",
                 fullname: "Annette Black",
                 date: "26 Aug, 2024",
                 comment: "Nulla molestie interdum ultricies. "
@@ -206,7 +206,7 @@ export const blogs = [
         author: {
             fullname: "Cameron Williamson",
             createdTime: "4 April, 2021",
-            imgUrl: "",
+            imgUrl: "/human1.svg",
             facebookUrl: "",
             instagramUrl: "",
             pinterestUrl: "",
@@ -236,35 +236,35 @@ export const blogs = [
         feedbacks: [
             {
                 id: 0,
-                imgUrl: "",
+                imgUrl: "/human2.svg",
                 fullname: "Devon Lane",
                 date: "26 Apr, 2024",
                 comment: "In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam."
             },
             {
                 id: 1,
-                imgUrl: "",
+                imgUrl: "/human3.svg",
                 fullname: "Jacob Jones",
                 date: "23 July, 2024",
                 comment: "In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam."
             },
             {
                 id: 2,
-                imgUrl: "",
+                imgUrl: "/human4.svg",
                 fullname: "Jane Cooper",
                 date: "26 June, 2023",
                 comment: "In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam."
             },
             {
                 id: 3,
-                imgUrl: "",
+                imgUrl: "/human5.svg",
                 fullname: "Darrell Steward",
                 date: "28 Jan, 2024",
                 comment: "In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam."
             },
             {
                 id: 4,
-                imgUrl: "",
+                imgUrl: "/human6.svg",
                 fullname: "Annette Black",
                 date: "26 Aug, 2024",
                 comment: "Nulla molestie interdum ultricies. "
@@ -273,7 +273,7 @@ export const blogs = [
         author: {
             fullname: "Cameron Williamson",
             createdTime: "4 April, 2021",
-            imgUrl: "",
+            imgUrl: "/human1.svg",
             facebookUrl: "",
             instagramUrl: "",
             pinterestUrl: "",
@@ -303,35 +303,35 @@ export const blogs = [
         feedbacks: [
             {
                 id: 0,
-                imgUrl: "",
+                imgUrl: "/human2.svg",
                 fullname: "Devon Lane",
                 date: "26 Apr, 2024",
                 comment: "In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam."
             },
             {
                 id: 1,
-                imgUrl: "",
+                imgUrl: "/human3.svg",
                 fullname: "Jacob Jones",
                 date: "23 July, 2024",
                 comment: "In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam."
             },
             {
                 id: 2,
-                imgUrl: "",
+                imgUrl: "/human4.svg",
                 fullname: "Jane Cooper",
                 date: "26 June, 2023",
                 comment: "In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam."
             },
             {
                 id: 3,
-                imgUrl: "",
+                imgUrl: "/human5.svg",
                 fullname: "Darrell Steward",
                 date: "28 Jan, 2024",
                 comment: "In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam."
             },
             {
                 id: 4,
-                imgUrl: "",
+                imgUrl: "/human6.svg",
                 fullname: "Annette Black",
                 date: "26 Aug, 2024",
                 comment: "Nulla molestie interdum ultricies. "
@@ -340,7 +340,7 @@ export const blogs = [
         author: {
             fullname: "Cameron Williamson",
             createdTime: "4 April, 2021",
-            imgUrl: "",
+            imgUrl: "/human1.svg",
             facebookUrl: "",
             instagramUrl: "",
             pinterestUrl: "",
@@ -370,35 +370,35 @@ export const blogs = [
         feedbacks: [
             {
                 id: 0,
-                imgUrl: "",
+                imgUrl: "/human2.svg",
                 fullname: "Devon Lane",
                 date: "26 Apr, 2024",
                 comment: "In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam."
             },
             {
                 id: 1,
-                imgUrl: "",
+                imgUrl: "/human3.svg",
                 fullname: "Jacob Jones",
                 date: "23 July, 2024",
                 comment: "In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam."
             },
             {
                 id: 2,
-                imgUrl: "",
+                imgUrl: "/human4.svg",
                 fullname: "Jane Cooper",
                 date: "26 June, 2023",
                 comment: "In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam."
             },
             {
                 id: 3,
-                imgUrl: "",
+                imgUrl: "/human5.svg",
                 fullname: "Darrell Steward",
                 date: "28 Jan, 2024",
                 comment: "In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam."
             },
             {
                 id: 4,
-                imgUrl: "",
+                imgUrl: "/human6.svg",
                 fullname: "Annette Black",
                 date: "26 Aug, 2024",
                 comment: "Nulla molestie interdum ultricies. "
@@ -407,7 +407,7 @@ export const blogs = [
         author: {
             fullname: "Cameron Williamson",
             createdTime: "4 April, 2021",
-            imgUrl: "",
+            imgUrl: "/human1.svg",
             facebookUrl: "",
             instagramUrl: "",
             pinterestUrl: "",
@@ -437,35 +437,35 @@ export const blogs = [
         feedbacks: [
             {
                 id: 0,
-                imgUrl: "",
+                imgUrl: "/human2.svg",
                 fullname: "Devon Lane",
                 date: "26 Apr, 2024",
                 comment: "In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam."
             },
             {
                 id: 1,
-                imgUrl: "",
+                imgUrl: "/human3.svg",
                 fullname: "Jacob Jones",
                 date: "23 July, 2024",
                 comment: "In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam."
             },
             {
                 id: 2,
-                imgUrl: "",
+                imgUrl: "/human4.svg",
                 fullname: "Jane Cooper",
                 date: "26 June, 2023",
                 comment: "In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam."
             },
             {
                 id: 3,
-                imgUrl: "",
+                imgUrl: "/human5.svg",
                 fullname: "Darrell Steward",
                 date: "28 Jan, 2024",
                 comment: "In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam."
             },
             {
                 id: 4,
-                imgUrl: "",
+                imgUrl: "/human6.svg",
                 fullname: "Annette Black",
                 date: "26 Aug, 2024",
                 comment: "Nulla molestie interdum ultricies. "
@@ -474,7 +474,7 @@ export const blogs = [
         author: {
             fullname: "Cameron Williamson",
             createdTime: "4 April, 2021",
-            imgUrl: "",
+            imgUrl: "/human1.svg",
             facebookUrl: "",
             instagramUrl: "",
             pinterestUrl: "",
@@ -504,35 +504,35 @@ export const blogs = [
         feedbacks: [
             {
                 id: 0,
-                imgUrl: "",
+                imgUrl: "/human2.svg",
                 fullname: "Devon Lane",
                 date: "26 Apr, 2024",
                 comment: "In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam."
             },
             {
                 id: 1,
-                imgUrl: "",
+                imgUrl: "/human3.svg",
                 fullname: "Jacob Jones",
                 date: "23 July, 2024",
                 comment: "In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam."
             },
             {
                 id: 2,
-                imgUrl: "",
+                imgUrl: "/human4.svg",
                 fullname: "Jane Cooper",
                 date: "26 June, 2023",
                 comment: "In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam."
             },
             {
                 id: 3,
-                imgUrl: "",
+                imgUrl: "/human5.svg",
                 fullname: "Darrell Steward",
                 date: "28 Jan, 2024",
                 comment: "In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam."
             },
             {
                 id: 4,
-                imgUrl: "",
+                imgUrl: "/human6.svg",
                 fullname: "Annette Black",
                 date: "26 Aug, 2024",
                 comment: "Nulla molestie interdum ultricies. "
@@ -541,7 +541,7 @@ export const blogs = [
         author: {
             fullname: "Cameron Williamson",
             createdTime: "4 April, 2021",
-            imgUrl: "",
+            imgUrl: "/human1.svg",
             facebookUrl: "",
             instagramUrl: "",
             pinterestUrl: "",
@@ -571,35 +571,35 @@ export const blogs = [
         feedbacks: [
             {
                 id: 0,
-                imgUrl: "",
+                imgUrl: "/human2.svg",
                 fullname: "Devon Lane",
                 date: "26 Apr, 2024",
                 comment: "In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam."
             },
             {
                 id: 1,
-                imgUrl: "",
+                imgUrl: "/human3.svg",
                 fullname: "Jacob Jones",
                 date: "23 July, 2024",
                 comment: "In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam."
             },
             {
                 id: 2,
-                imgUrl: "",
+                imgUrl: "/human4.svg",
                 fullname: "Jane Cooper",
                 date: "26 June, 2023",
                 comment: "In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam."
             },
             {
                 id: 3,
-                imgUrl: "",
+                imgUrl: "/human5.svg",
                 fullname: "Darrell Steward",
                 date: "28 Jan, 2024",
                 comment: "In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam."
             },
             {
                 id: 4,
-                imgUrl: "",
+                imgUrl: "/human6.svg",
                 fullname: "Annette Black",
                 date: "26 Aug, 2024",
                 comment: "Nulla molestie interdum ultricies. "
@@ -608,7 +608,7 @@ export const blogs = [
         author: {
             fullname: "Cameron Williamson",
             createdTime: "4 April, 2021",
-            imgUrl: "",
+            imgUrl: "/human1.svg",
             facebookUrl: "",
             instagramUrl: "",
             pinterestUrl: "",

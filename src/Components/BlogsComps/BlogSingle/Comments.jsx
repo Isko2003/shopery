@@ -1,52 +1,30 @@
 import { GoDotFill } from "react-icons/go";
 import MainButton from "../../Common/MainButton";
-const Comments = () => {
+
+const Comments = ({feedbacks}) => {
     return (
         <div className='my-5 mt-8'>
             <h4 className='mb-5 font-semibold text-2xl'>Comments</h4>
-            <div className='flex flex-col gap-5 justify-center'>
-                <div className='flex gap-3 items-center'>
-                    <div className=''>
-                        <img src="" alt="avatar img" />
-                    </div>
-                    <div>
-                        <div className='flex gap-3 items-center'>
-                            <p>Annette Black</p>
-                            <GoDotFill />
-                            <p className='text-gray-500'>26 Apr, 2021</p>
+            {feedbacks.map(({id, imgUrl, fullname,date, comment }) => {
+                return <div className='flex flex-col gap-5 justify-center' key={id}>
+                    <div className='flex gap-3 items-center'>
+                        <div className="w-24 h-24">
+                            <img src={imgUrl} alt="avatar img" className="w-full"/>
                         </div>
-                        <p className="text-gray-500 mt-1" > In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam.   </p>
-                    </div>
-                </div>
-                <hr />
-                <div className='flex gap-3 items-center'>
-                    <div className=''>
-                        <img src="" alt="avatar img" />
-                    </div>
-                    <div>
-                        <div className='flex gap-3 items-center'>
-                            <p>Annette Black</p>
-                            <GoDotFill />
-                            <p className='text-gray-500'>26 Apr, 2021</p>
+                        <div>
+                            <div className='flex gap-3 items-center'>
+                                <p>{fullname}</p>
+                                <GoDotFill />
+                                <p className='text-gray-500'>{date}</p>
+                            </div>
+                            <p className="text-gray-500 mt-1" >{comment} </p>
                         </div>
-                        <p className="text-gray-500 mt-1" > In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam.   </p>
                     </div>
+                    <hr />
+
                 </div>
-                <hr />
-                <div className='flex gap-3 items-center'>
-                    <div className=''>
-                        <img src="" alt="avatar img" />
-                    </div>
-                    <div>
-                        <div className='flex gap-3 items-center'>
-                            <p>Annette Black</p>
-                            <GoDotFill />
-                            <p className='text-gray-500'>26 Apr, 2021</p>
-                        </div>
-                        <p className="text-gray-500 mt-1" > In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam.   </p>
-                    </div>
-                </div>
-            </div>
+            })}
+           
             <MainButton classNames="mt-5 btn-1 border-2 border-primary px-6 py-2" title="Load More" url="" />
         </div>
     )
