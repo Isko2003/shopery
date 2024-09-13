@@ -12,11 +12,11 @@ const ShopProd = () => {
         const fetchData = async () => {
             const supabaseUrl = await supabase.from('Shopery_Data').select('*');
             console.log(supabaseUrl)
-            if (error) {
-                console.error(error);
-            } else {
-                setProducts(data);
-            }
+            // if (error) {
+            //     console.error(error);
+            // } else {
+            //     setProducts(data);
+            // }
         };
 
         fetchData();
