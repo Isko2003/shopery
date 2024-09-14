@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import { CiStar } from "react-icons/ci";
 import { CiShoppingBasket } from "react-icons/ci";
 import { IoIosHeartEmpty } from "react-icons/io";
 import { IoEyeOutline } from "react-icons/io5";
@@ -8,15 +7,15 @@ import orange from '../../assets/imgs/orange.png';
 
 export const ShopProdCard = ({ product }) => {
 
-    const { img, title, price, discount } = product;
+    const { image_url, name, price, discount } = product;
 
   return (
     <div className='border-[#e5e5e5] border cursor-pointer hover:border-soft_primary transition-all duration-300 product-card'>
         <div className='relative product-img'>
-            <div className={`absolute top-3 left-4 w-[90px] h-[30px] bg-danger br-6 ${img === orange ? "block" : "hidden"}`}>
+            <div className={`absolute top-3 left-4 w-[90px] h-[30px] bg-danger br-6 ${image_url === orange ? "block" : "hidden"}`}>
                 <span className='text-center text-white text-sm flex justify-center items-center mt-1'>Sale 50%</span>
             </div>
-            <img src={img} alt="fruit" />
+              <img src={image_url} alt="fruit" />
             <div className='absolute right-3 top-6 bg-[#e5e5e5] rounded-full p-1 mt-[-4px] opacity-0 invisible'>
                 <IoIosHeartEmpty className='text-2xl'/>
             </div>
@@ -26,7 +25,7 @@ export const ShopProdCard = ({ product }) => {
         </div>
         <div className='product-info flex justify-between items-center'>
             <div className='ms-1 mb-1'>
-                <h3 className='pb-1 text-[#4d4d4d] text-sm'>{title}</h3>
+                <h3 className='pb-1 text-[#4d4d4d] text-sm'>{name}</h3>
                 <div className='flex gap-1 pb-1'>
                       <span>&#36;{price}</span>
                       {
@@ -51,8 +50,8 @@ export const ShopProdCard = ({ product }) => {
 }
 ShopProdCard.propTypes = {
     product: PropTypes.shape({
-        img: PropTypes.string.isRequired,  
-        title: PropTypes.string.isRequired,
+        image_url: PropTypes.string.isRequired,  
+        name: PropTypes.string.isRequired,
         price: PropTypes.number.isRequired,
         discount: PropTypes.number
     }).isRequired
